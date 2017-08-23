@@ -1,0 +1,1 @@
+When prompted for a Health Center ID, "HC85615183018" is a guaranteed valid ID

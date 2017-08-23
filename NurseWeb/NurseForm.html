@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Form</title>
+        
+        <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+        <link rel=stylesheet href="main.css">
+    </head>
+    <body>
+        *Fill out all information on this form
+        <form role="form" id="nurseForm">
+            <h3>Basic Information</h3>
+            <div class="form-group">
+                <label for="time">Time of Entry</label>
+                <input type="text" id="time" class="form-control" placeholder="Enter Time">
+            </div>
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" class="form-control" placeholder="Enter First Name">
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" class="form-control" placeholder="Enter Last Name">
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight</label>
+                <input type="text" id="weight" class="form-control" placeholder="Enter Weight">
+            </div>
+            <div class="form-group">
+        		<label for="fever">Fever?</label><br>
+        		<input type="radio" name="fever" value="yes">Yes<br>
+        		<input type="radio" name="fever" value="no">No
+        	</div>
+            <div class="form-group">
+        		<label for="feverDays">How Long?</label><br>
+        		<input type="text" id="FeverLen" class="form-control" placeholder="How Long has Fever persisted">
+        	</div>
+
+            <h3>Travel Information</h3>
+        	<div class="form-group">
+        		<label for="travelled">Travelled Recently?</label><br>
+        		<input type="radio" name="travelled" value="yes">Yes<br>
+        		<input type="radio" name="travelled" value="no">No
+        	</div>
+        	<div class="form-group">
+        		<label for="travelledC">Contact With Anyone Travelled?</label><br>
+        		<input type="radio" name="travelledC" value="yes">Yes<br>
+        		<input type="radio" name="travelledC" value="no">No
+        	</div>
+        	<div class="form-group">
+                <label for="travelledTo">Travelled To</label>
+                <input type="text" id="travelledTo" class="form-control" placeholder="Enter Location Travelled To">
+            </div>
+            <h3>Medical Information</h3>
+            <div class="form-group">
+                <label for="PMHX">Personal Medical History</label>
+                <textarea type="text" id="PMHX" class="form-control" placeholder="Enter PMHX"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="allergies">Allergies</label>
+                <input type="text" id="allergies" class="form-control" placeholder="Enter Allergies">
+            </div>
+            <div class="form-group">
+                <label for="bp">Blood Pressure</label>
+                <input type="text" id="bp" class="form-control" placeholder="Enter Blood Pressure">
+            </div>
+            <div class="form-group">
+                <label for="pulse">Pulse</label>
+                <input type="text" id="pulse" class="form-control" placeholder="Enter Pulse">
+            </div>
+            <div class="form-group">
+                <label for="respiration">Respiration</label>
+                <input type="text" id="respiration" class="form-control" placeholder="Enter Respiration">
+            </div>
+            <div class="form-group">
+                <label for="SPO2">Peripheral capillary oxygen saturation</label>
+                <input type="text" id="SPO2" class="form-control" placeholder="Enter Peripheral Capillary Oxygen Saturation">
+            </div>
+            <div class="form-group">
+                <label for="temp">Temperature</label>
+                <input type="text" id="temp" class="form-control" placeholder="Enter Temperature">
+            </div>
+            
+            <div class="form-group">
+                <label for="nSig"><i>RN Signature</i></label>
+                <input type="text" id="nSig" class="form-control" placeholder="Registered Nurse's Signature">
+            </div>
+            
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <input type="text" id="notes" class="form-control" placeholder="Enter Notes">
+            </div>
+            <div class="form-group">
+                <label for="diagnosis">Diagnosis</label>
+                <input type="text" id="diagnosis" class="form-control" placeholder="Enter Diagnosis">
+            </div>
+            <div class="form-group">
+                <label for="treatment">Treatment</label>
+                <input type="text" id="treatment" class="form-control" placeholder="Enter Treatment">
+            </div>
+            
+            <div class="form-group">
+                <label for="dSig"><i>Doctor's Signature</i></label>
+                <input type="text" id="dSig" class="form-control" placeholder="Enter Doctor's Signature">
+            </div>
+            
+            <button type="button" class="btn btn-default btn-lg" onclick="discharge()">Discharge Patient </button>
+        </form>
+        <script type="text/javascript" src="main.js"></script>
+</body>

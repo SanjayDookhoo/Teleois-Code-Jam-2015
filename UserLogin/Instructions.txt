@@ -1,0 +1,7 @@
+Install node.js on your machine
+cd to the folder containing the server.js file ie. ../dregHIS/UserLogin
+Run the command, "node server.js"
+Once the server is running,
+Open your browser
+In the url bar
+Enter, "localhost:3000"
